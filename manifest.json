@@ -4,7 +4,7 @@
     "version": "1.0",
 
     "description": "Ссылки в Yandex открываются в одном окне",
-    "homepage_url": "web.com",
+    "homepage_url": "https://github.com/osija/One_tab_tor_Ya",
 
     "icons": {
         "48": "icons/logo.png" 

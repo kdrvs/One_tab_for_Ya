@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "One tab for Ya",
+    "version": "1.0",
+
+    "description": "Ссылки в Yandex открываются в одном окне",
+    "homepage_url": "web.com",
+
+    "icons": {
+        "48": "icons/logo.png" 
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/logo.png",
+        "default_title": "One tab for Ya"
+    },
+
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "one_tab_for_ya@osija"
+        }
+    },
+
+    "application": {
+        "geco": {
+            "id": "one_tab_for_ya@osija",
+            "strict_min_version": "45.0"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.yandex.ru/*", "*://*.yandex.com/*", "*://*.ya.ru/*"],
+            "js": ["script.js"]
+        }
+    ]
+
+
+}
